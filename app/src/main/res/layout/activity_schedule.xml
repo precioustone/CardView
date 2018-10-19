@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.cardview.ScheduleActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbarLayout"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/schCont"
+        android:layout_below="@id/toolbarLayout">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="info.androidhive.cardview.ScheduleFragment"
+            android:tag="SCHEDULE"
+            android:id="@+id/schedule" />
+
+    </FrameLayout>
+
+</RelativeLayout>

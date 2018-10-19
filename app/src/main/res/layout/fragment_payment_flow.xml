@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.cardview.PaymentFlowActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewflip">
+
+            <include layout="@layout/select_pay_method"
+                android:id="@+id/spm"/>
+
+            <include layout="@layout/activity_payment_method"
+                android:id="@+id/apm"/>
+
+            <include layout="@layout/activity_payment__details"
+                android:id="@+id/apd"/>
+
+
+        </ViewFlipper>
+    </RelativeLayout>
+
+</FrameLayout>

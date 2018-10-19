@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brands">
+        <item>Gasnownow</item>
+        <item>NNPC</item>
+        <item>Total</item>
+        <item>Oando</item>
+        <item>Forte oil</item>
+        <item>Mobil</item>
+        <item></item>
+    </string-array>
+</resources>

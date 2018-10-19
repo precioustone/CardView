@@ -1,0 +1,181 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="info.androidhive.cardview.pstackFragment"
+        android:background="#99000000">
+
+        <RelativeLayout
+            android:id="@+id/invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blank"
+                android:id="@+id/rel1"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/textview_error"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:padding="8dp"
+                    android:text=" "
+                    android:textColor="#ffffff"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="30dp"/>
+
+                <EditText
+                    android:id="@+id/edit_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:hint="@string/card_number"
+                    android:inputType="number"
+                    android:minEms="8"
+                    android:text=""
+                    android:layout_below="@id/textview_error"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_card_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:hint="Amount"
+                    android:inputType="phone"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/amt"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/lin1">
+
+                    <EditText
+                        android:id="@+id/edit_cvc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="center"
+                        android:hint="@string/cvv"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:minEms="4"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                        <EditText
+                            android:id="@+id/edit_expiry_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout_card_num"
+                            android:layout_toLeftOf="@id/divider_horizontal"
+                            android:gravity="right"
+                            android:hint="@string/mm"
+                            android:inputType="number"
+                            android:maxEms="3"
+                            android:maxLength="2"
+                            android:text=""
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"/>
+
+                        <EditText
+                            android:id="@+id/edit_expiry_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout_card_num"
+                            android:layout_toRightOf="@id/divider_horizontal"
+                            android:gravity="left"
+                            android:hint="@string/yyyy"
+                            android:textColorHint="#FFFFFF"
+                            android:inputType="number"
+                            android:maxEms="4"
+                            android:maxLength="4"
+                            android:text=""
+                            android:textColor="#FFFFFF"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/button_perform_local_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rel1"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:text="Charge card"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:textColor="#FFFFFF"
+                />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_close_black_24dp"
+                android:id="@+id/close"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/spin"
+                android:visibility="gone"
+                android:id="@+id/gif"/>
+
+        </RelativeLayout>
+
+
+</ScrollView>
+

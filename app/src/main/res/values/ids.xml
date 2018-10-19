@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="three" type="id"/>
+    <item name="five" type="id"/>
+    <item name="seven" type="id"/>
+    <item name="ten" type="id"/>
+    <item name="twel" type="id"/>
+    <item name="fif" type="id"/>
+    <item name="twen" type="id"/>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.cardview.RefillActivity"
+    android:background="#C6C6C6">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:background="@color/fui_transparent"
+        android:id="@+id/viewflip"
+        android:visibility="gone">
+
+
+        <include layout="@layout/purchase_form" android:id="@+id/form"/>
+
+
+
+        <include layout="@layout/userdetails" android:id="@+id/details" />
+
+        <include layout="@layout/summary" android:id="@+id/summary" />
+
+
+
+        <include layout="@layout/activity_check_out" android:id="@+id/check" />
+
+        <include layout="@layout/information" android:id="@+id/info" />
+        
+    </ViewFlipper>
+    <!--ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pg"
+        android:indeterminateDrawable="@drawable/progress"
+        android:indeterminate="true"/-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pg" />
+</RelativeLayout>

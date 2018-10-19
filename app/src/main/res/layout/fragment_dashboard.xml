@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="info.androidhive.cardview.Dashboard"
+    android:layout_gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:clipToPadding="false">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:clipToPadding="false"
+            android:background="@color/fui_transparent"
+            android:id="@+id/viewflip">
+
+            <include layout="@layout/dashboard" android:id="@+id/dash"/>
+
+
+            <include layout="@layout/recycle_stations" android:id="@+id/rec"/>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+</FrameLayout>
