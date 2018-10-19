@@ -38,14 +38,14 @@
     <string name="permission_required_toast">Location permission is required for this demo.</string>
 
     <!--for facebook-->
-    <string name="facebook_app_id">144012659659057</string>
-    <string name="fb_login_protocol_scheme">fb144012659659057</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
 
 
     <!--for twitter-->
 
-    <string name="twitter_consumer_key" translatable="false">g0S5LlwLHoGTXeUwmRSY1DEuL</string>
-    <string name="twitter_consumer_secret" translatable="false">Ss8Lazxq8miEkMGidYikEXhvv7DpLvkOd1bm4cIWTEJ3BDZg4l
+    <string name="twitter_consumer_key" translatable="false"></string>
+    <string name="twitter_consumer_secret" translatable="false">
 </string>
 
     <!-- TODO: Remove or change this placeholder text -->
